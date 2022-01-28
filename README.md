@@ -4,7 +4,7 @@ Les océans, qui couvrent 70 % de la surface la planète, constituent le plus gr
 
 La microscopie au sens large est l'approche classique pour étudier la diversité du phytoplancton. De plus en plus, des approches de génomique environnementale sont utilisées pour venir compléter les observations faites au microscope. Le DNA metabarcoding, qui consiste à amplifier et séquencer une région spécifique du génome de tous les organismes présents dans un échantillon, est souvent employé dans ce contexte. Cette région est généralement très courte (quelques centaines de paires de bases) et est suffisamment variable pour pouvoir différencier des familles, des genres, voir des espèces. Chacune de ces séquences est appelée *Amplicon sequence variant* (ASV). Il est alors très facile d'obtenir une vue d'ensemble de la biodiversité générale d'un échantillon. Mais pour faire le lien entre cette diversité et la diversité spécifique déjà décrite par microscopie nous avons besoin de séquences de référence, c'est à dire des séquences d'ADN provenant d'organismes isolés et décrits morphologiquement. C'est seulement après avoir fait ce lien qu'il est possible d'étudier l'écologie d'une espèce à partir de données de génomique environnementale.
 
-L'objectif de ce projet est, pour un groupe de phytoplancton donné, de:
+L'objectif de ce projet est, pour un groupe de phytoplancton donné, de: 
 
 * Récupérer les séquences de références (rDNA) de ce groupe à partir de la base de données PR2 et EukRibo. Comparer la diversité de ces séquences avec la diversité morphotaxonomique du groupe.
 
