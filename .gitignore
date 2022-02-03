@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 data/
+crypto_seq.fasta
+cryptosequences.csv
