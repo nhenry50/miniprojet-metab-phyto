@@ -4,6 +4,7 @@ library(data.table)
 
 data <- fread(here::here("data","eukbank_18SV4_asv.table_rarefied_10000.gz"))
 
+
 # load contextual data
 
 context <- fread(here::here("data","eukbank_18SV4_asv.metadata20211123.gz"))
@@ -32,12 +33,16 @@ data_tara <- data[,.SD,.SDcols=c(context_tara[,sample])]
 x <- apply(data_tara,1,sum)
 y <- apply(data_tara,1,function(X) sum(X>0))
 
-data_tara <- data.table(data[,.(amplicon,similarity,taxonomy,references)],
+data[,ndiff:=round((100-similarity)*3.75)]
+
+data_tara <- data.table(data[,.(amplicon,similarity,ndiff,taxonomy,references)],
                         total=x,
                         spread=y,
                         data_tara)
 
 data_tara <- data_tara[total >= 10 & spread >= 2]
+
+
 
 fwrite(data_tara,
        file = here::here("outputs","tara_data_asv_table.tsv.gz"),
